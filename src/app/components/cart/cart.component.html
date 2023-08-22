@@ -1,0 +1,29 @@
+<div class="cartCard">
+  <h1 class="cartCard__title">Panier d'Achats</h1>
+  <ng-container *ngIf="cartProducts$ | async as products">
+    <ng-container *ngIf="products.length > 0; else emptyList">
+      <div *ngFor="let product of products" class="listItem">
+        <div class="label">{{ product.label }} ({{ product.quantity }})</div>
+
+        <div class="price">
+          {{ product.price + "x" + product.quantity }} =
+          {{ product.price * product.quantity }}€
+        </div>
+
+        <button
+          (click)="removeProductFromCart(product.id)"
+          class="a-button"
+          style="color: #cb1313"
+        >
+          Retirer du panier
+        </button>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <h2 *ngIf="total" class="total">Total: {{ total }} €</h2>
+
+  <ng-template #emptyList>
+    Le panier est vide, pensez à ajouter des articles
+  </ng-template>
+</div>

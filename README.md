@@ -1,27 +1,41 @@
-# CodailyCartApp
+# Application de Gestion de Panier d'Achats avec Angular et BehaviorSubject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Une application Angular qui simule un système de gestion de panier d'achats. L'application a deux vues principales: la liste des articles et le panier d'achats.
 
-## Development server
+## Sommaire
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Objectif](#objectif)
+- [Liens utiles](#liens-utiles)
+- [Comment lancer le projet](#comment-lancer-le-projet)
+- [Auteur](#auteur)
 
-## Code scaffolding
+## Objectif
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Développer une application Angular de gestion de panier d'achats qui permet aux utilisateurs d'ajouter des articles au panier, tout en utilisant BehaviorSubject pour mettre en œuvre la communication entre les composants.
 
-## Build
+## Liens utiles
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Lien vers l'atricle**: [Programmation reactive avec Angular & BehaviorSubject: Gestionnaire de panier d'achats](https://www.codaily.dev/blog/programmation-reactive-avec-angular-behaviorsubject-gestionnaire-de-panier-d-achats)
+- **Lien vers le repo git**: [Application de Gestion de Panier d'Achats avec Angular et BehaviorSubject](https://github.com/codaily-dev/Angular-BehaviorSubject-Gestionnaire-de-panier-d-achats)
 
-## Running unit tests
+## Comment lancer le projet
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Installation des dépendances**: Ouvrez une ligne de commande dans le répertoire racine du projet et exécutez la commande suivante pour installer les dépendances nécessaires
 
-## Running end-to-end tests
+```sh
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Démarrage du serveur de développement**: Exécutez la commande suivante pour démarrer le serveur de développement. Cela va compiler votre application et la rendre accessible dans votre navigateur.
 
-## Further help
+```sh
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Accès à l'application**: Ouvrez votre navigateur et rendez-vous à l'adresse http://localhost:4200/. Vous devriez maintenant voir l'application en cours d'exécution.
+
+## Auteur
+
+Pour toute question ou commentaire, n'hésitez pas à contacter l'auteur :
+
+- Email: [codaily.dev@gmail.com](mailto:codaily.dev@gmail.com)

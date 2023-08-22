@@ -1,0 +1,20 @@
+<div class="productsCard">
+  <h1 class="productsCard__title">Liste des Articles</h1>
+  <ng-container *ngIf="products$ | async as products">
+    <div *ngIf="products.length > 0; else emptyList">
+      <div *ngFor="let product of products" class="listItem">
+        <div class="label">
+          {{ product.label }}
+        </div>
+
+        <div class="price">{{ product.price }}€</div>
+
+        <button (click)="addProductToCart(product)" class="a-button">
+          Ajouter au panier
+        </button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #emptyList> La liste est vide </ng-template>
+</div>

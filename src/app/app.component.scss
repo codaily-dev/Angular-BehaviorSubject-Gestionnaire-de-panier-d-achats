@@ -1,0 +1,31 @@
+.homePage {
+  max-width: 900px;
+  margin: auto;
+  &__title {
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 40px 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__resources {
+    margin: 50px 0;
+  }
+
+
+  li {
+    margin: 15px 0;
+  }
+}

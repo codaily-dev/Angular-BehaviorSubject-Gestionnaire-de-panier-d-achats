@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.a-button {
+  background-color: #eab308;
+  color: #333333;
+  padding: 10px 20px;
+  border: 1px solid #eab308;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+
+  .label,
+  .price {
+    min-width: 120px;
+  }
+
+  .price {
+    color: #14b8a6;
+  }
+}
